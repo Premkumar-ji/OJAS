@@ -28,9 +28,9 @@ def create_database():
 
     # Add sample contacts (if not already present)
     sample_contacts = [
-        ("me", "+919835345663"),
-        ("john", "+912345678901"),
-        ("friend", "+918765432100")
+        ("me", "+919XXXXXXXX3"),
+        ("john", "+912XXXXXX01"),
+        ("friend", "+91XXXXXXXXX0")
     ]
     cursor.executemany("INSERT OR IGNORE INTO contacts (name, phone) VALUES (?, ?)", sample_contacts)
     conn.commit()
